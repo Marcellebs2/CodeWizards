@@ -1,0 +1,101 @@
+@media screen and (max-width: 600px){
+    body{
+        overflow-x: hidden;
+    }
+    .head_container{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 40px;
+        padding: 30px;
+    }
+    .logo{
+        text-align: center;
+        font-size: 1.2em;
+        margin-left: 60px;
+    }
+    .login_btn{
+        font-size: 1em;
+        width: auto;
+    }
+    .head_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        padding: 20px;
+    }
+    .cta_field{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.7em;
+        letter-spacing: 2px;
+    }
+    .cta_field h3{
+        width: auto;
+    }
+    .sigin_btn{
+        margin-left: 0;
+        width: auto;
+        margin-bottom: 40px;
+    }
+    .main_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .back_main{
+        height: 170vh;
+    }
+    .card{
+        min-width: 70vw;
+    }
+    .footer_container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 20px;
+    }
+    .icons i{
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 1439px){
+    
+}
+
+/* Formulário responsivo */
+
+@media (max-width: 930px) {
+    .header_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        height: auto;
+    }
+    .form_card{
+        padding: 10px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .fields{
+        width: 60vw;
+    }
+    .field_radio{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        position: relative;
+        left: 25%;
+    }
+    .field_radio .radio{
+        width: 50vw;
+    }
+    .btn{
+        width: 100%;
+    }
+}

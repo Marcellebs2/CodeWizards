@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/130e6d6c32.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./imagem/code_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../cadStyle.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <title>Cadastro de Programadores</title>
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h2>Code<span>Wizards</span></h2>
+                </a>
+            </div>
+            <h4>Programador</h4>
+        </div>
+    </header>
+    <main>
+        <div class="form_container">
+            <form action="cad_prog.php" method="post">
+                <div class="form_card">
+                    <div class="left_side">
+
+                        <div class="fields">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="fields">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="fields">
+                            <label for="dn">Data de aniversário</label>
+                            <input type="date" id="dn" name="dn" required>
+                        </div>
+                        <div class="fields">
+                            <label for="fone">Telefone</label>
+                            <input type="text" id="fone" name="fone" required>
+                        </div>
+                        <div class="fields">
+                            <label for="end">Endereço</label>
+                            <input type="text" id="end" name="end" required>
+                        </div>
+                    </div>
+                    <div class="right_side">
+                        <div class="fields">
+                            <label for="lin">Linkedin</label>
+                            <input type="text" id="lin" name="lin" required>
+                        </div>
+                        <div class="fields">
+                            <label for="git">GitHub</label>
+                            <input type="text" id="git" name="git" required>
+                        </div>
+                        <div class="fields">
+                            <label for="sen">Senioridade</label>
+                            <select name="sen" id="sen">
+                                <option value="" selected disabled>Escolha</option>
+                                <option value="junior">Júnior</option>
+                                <option value="pleno">Pleno</option>
+                                <option value="senior">Sênior</option>
+                            </select>
+                            <label for="sex">Sexo</label>
+                            <select name="sex" id="sex">
+                                <option value="" selected disabled>Escolha</option>
+                                <option value="fem">Feminino</option>
+                                <option value="masc">Masculino</option>
+                                <option value="out">Outro</option>
+                            </select>
+                        </div>
+                        <div class="fields">
+                            <label for="front">Aplicação que atua</label>
+                            <div class="field_radio">
+                                <div class="radio">
+                                    <input type="radio" id="front" name="area" value="front" required> 
+                                    <label for="front">Front-end</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" id="back" name="area" value="back" required> 
+                                    <label for="back">Back-end</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" id="full" name="area" value="full" required> 
+                                    <label for="full">Fullstack</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <input type="submit" value="Cadastrar">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

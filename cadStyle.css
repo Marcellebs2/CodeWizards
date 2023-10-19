@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500&display=swap');
+
+:root{
+    background: rgb(7,67,32);
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./imagem/fundo_cad.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Karla', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    height: 17vh;
+}
+
+.logo{
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 700;
+    border-bottom: 2px solid #24e2ec66;
+    margin-left: 90px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo span{
+    font-size: 1.4em;
+    color: #2dedf4;
+    font-style: italic;
+    font-family: monospace;
+}
+
+.header_container h4{
+    font-size: 1.9em;
+    font-weight: bolder;
+    margin-right: 90px;
+}
+
+.form_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.form_card{
+    border: .3em solid #80FFF7;
+    border-radius: 20px;
+    padding: 30px;
+    width: 70vw;
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 14px 5px rgba(195, 250, 255, 0.44);
+    -webkit-box-shadow: 1px 1px 14px 5px rgba(195, 250, 255, 0.44);
+    -moz-box-shadow: 1px 1px 14px 5px rgba(195, 250, 255, 0.44);
+}
+
+.left_side, .right_side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.fields{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    gap: 10px;
+}
+
+.fields label{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.fields input, .fields select{
+    height: 2.3em;
+    padding-left: .6em;
+    font-size: 1em;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(48, 170, 223, 0.336);
+    color: #fff;
+    outline: none;
+}
+
+input:focus{
+    background-color: rgba(48, 171, 223, 0.634);
+}
+
+.field_radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 29vw;
+    gap: 10px;
+    font-size: .80em;
+}
+.field_radio .radio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.btn input{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(48, 170, 223, 0.336);
+    padding: .4em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.btn input:hover{
+    filter: drop-shadow(0 0 15px #3ebedb) drop-shadow(0 0 50px #3ecbdb) contrast(2) brightness(2);
+}
+
+/* Estilização confirmação de cadastro */
+
+section{
+    width: 100%;
+    height: 30vh;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5em;
+    gap: 4rem;
+    font-size: 1.8em;
+}
+
+.btn a{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(48, 170, 223, 0.336);
+    padding: .4em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.btn a:hover{
+    filter: drop-shadow(0 0 15px #3ebedb) drop-shadow(0 0 50px #3ecbdb) contrast(2) brightness(2);
+}

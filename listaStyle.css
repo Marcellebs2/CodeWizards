@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500&display=swap');
+
+:root{
+    background: rgb(7,67,32);
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./imagem/fundo_cad.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Karla', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    height: 17vh;
+}
+
+.logo{
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 700;
+    border-bottom: 2px solid #24e2ec66;
+    margin-left: 90px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo span{
+    font-size: 1.4em;
+    color: #2dedf4;
+    font-style: italic;
+    font-family: monospace;
+}
+
+.header_container h4{
+    font-size: 1.9em;
+    font-weight: bolder;
+    margin-right: 90px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 30vh;
+    padding: 20px;
+}
+
+.content{
+    color: #fff;
+    text-align: center;
+}
+
+.content h2{
+    font-size: 2em;
+}
+
+table{
+    width: 100%;
+}
+
+.content_list{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.2em;
+    border: .3em solid #80FFF7;
+    border-radius: 25px;
+    min-height: 20vh;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 14px 5px rgba(195, 250, 255, 0.44);
+    -webkit-box-shadow: 1px 1px 14px 5px rgba(86, 232, 255, 0.44);
+    -moz-box-shadow: 1px 1px 14px 5px rgba(2, 234, 255, 0.44);
+    display: flex;
+}
+
+.content_list th{
+    font-size: 1em;
+    background-color: rgba(48, 171, 223, 0.585);
+    width: 15vw;
+    padding: 2px;
+}
+
+.content_list td{
+    width: 15vw;
+    padding: 9px 7px;
+    height: 7vh;
+    border-bottom: 1px solid #fff;
+}
+
+.btn_del, .btn_alt{
+    width: 1.2vw;
+    height: 1.2vw;
+    border-radius: 2em;
+    background-color: #F10000;
+    border: transparent;
+    cursor: pointer;
+}
+
+.btn_del:hover{
+    background-color: transparent;
+    border: 2px solid #F10000;
+}
+
+.btn_alt{
+    background-color: #FFF500;
+}
+
+.btn_alt:hover{
+    background-color: transparent;
+    border: 2px solid #FFF500;
+}
+
+.btn{
+    margin-top: 30px;
+}
+
+.btn a{
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(48, 170, 223, 0.336);
+    padding: .4em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.btn a:hover{
+    filter: drop-shadow(0 0 15px #3ebedb) drop-shadow(0 0 50px #3ecbdb) contrast(2) brightness(2);
+}

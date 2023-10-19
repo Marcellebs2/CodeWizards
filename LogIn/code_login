@@ -1,0 +1,44 @@
+<?php
+    // Fazer a conecção com o banco de dados
+    include('./connect.php');
+    
+    // Verificar se existem o username e o password
+    if(isset($_POST['username']) || isset($_POST['password'])){
+        
+        // Verificar se o username ou o password estão em branco
+        if(strlen($_POST['username']) == 0){
+            echo "<h2>Preencha seu username</h2>";
+        } else if(strlen($_POST['password']) == 0){
+            echo "<h2>Preencha sua senha</h2>";
+        } else{
+            // Limpar o username para evitar uma vulnerabilidade
+            $username = $con->real_escape_string($_POST['username']);
+            $password = $con->real_escape_string($_POST['password']);
+
+            $sql = "SELECT * FROM user WHERE username='$username' AND password='$password'";
+            $sql_query = $con->query($sql) or die("Falha na execução do código SQL: ". $con->error);
+            
+            $qtd_linha = $sql_query->num_rows;
+
+            if($qtd_linha == 1){
+
+                $usuario = $sql_query->fetch_assoc();
+
+                if(!isset($_SESSION)){
+                    session_start();
+                }
+
+                $_SESSION['id'] = $usuario['id'];
+                $_SESSION['username'] = $usuario['username'];
+
+                header("Location: dashboard.php");
+
+            } else{
+                echo "<h2>Falha ao logar! Email ou senha incorretos</h2>";
+            }
+
+        }
+
+    }
+
+?>
